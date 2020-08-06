@@ -92,6 +92,7 @@ const setUser =(state,user)=>{
      if(list[i].email === user.email && list[i].password === user.password){
          state.users.splice(i,1,user)
      }
- }   
+ }
+ state.login = false   
  return state
 }
